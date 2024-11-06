@@ -8,6 +8,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+      />
 	  
     <link
       rel="stylesheet"
@@ -16,12 +17,15 @@
       crossorigin="anonymous"
     />
     <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   
+
      <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="C:\Users\user1\OneDrive\Johnny-pc\file\website\style.css" />
+   <link rel="stylesheet" href="style.css">
      <script
       src="https://kit.fontawesome.com/f3844ab6a8.js"
       crossorigin="anonymous"
@@ -38,43 +42,141 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li><a href="#home" class="nav__link">Home</a></li>
+          <li class="activ"><a href="#intro" class="nav__link">Home</a></li>
           <li>
-            <a href="#services" class="nav__link">My Services</a>
+            <a href="#services" class="nav__link"> Services</a>
           </li>
           <li>
-            <a href="#about" class="nav__link">About me</a>
+            <a href="#about" class="nav__link">About </a>
           </li>
           <li>
-            <a href="#resume" class="nav__link">My resume</a>
+            <a href="#resume" class="nav__link"> resume</a>
           </li>
           <li>
-            <a href="#skills" class="nav__link">My skills</a>
+            <a href="#skills" class="nav__link"> skills</a>
           </li>
 		<li>
-            <a href="C:\\Users\\user1\\OneDrive\\Johnny-pc\\file\\website\\index2.html" target="_blank" class="nav__link">For more about me</a>
-          </li>
+     <a href="#projects"  class="nav__link"> Projects</a>
+    </li>
+    <li>
+      <a href="#contatcts"  class="nav__link"> Contacts</a>
+     </li>
        </ul>
       </nav>
 	  </header>
 
-    <!-- Introduction -->
+    <!-- Introduction
 	 <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
         Hello, it's me <strong>Johnny  Medhane</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">Junior QA Engineer</p>
       <img
-        src="C:\Users\user1\OneDrive\Johnny-pc\file\website\DSC04226.jpg"
+        src=""
         alt="picture of me"
         class="intro__img"
       />
-    </section>
+    </section> -->
 
+  <section class="intr" id="intro">
+    <div class="details" data-sidebar>
+    <div class="sidebar-info">
+      <figure class="avatar-box">
+        <img src="face.png" alt="Johnny" width="100">
+      </figure>
+
+      <div class="info-content">
+        <h2 class="name" title="Johnny Medhane">Johnny Medhane</h2>
+
+        <p class="title">Web developer & QA Engineer</p>
+      </div>
+
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+
+        <span class="material-symbols-outlined">
+          stat_minus_1
+          </span>
+      </button>
+
+    </div>
+
+    <div class="sidebar-info_more">
+      <div class="separator"></div>
+      <ul class="contact-list">
+        <li class="contact-item">
+         <div class="contact-icon">
+           <span class="material-symbols-outlined">
+          mail
+          </span></div>
+         <div class="contact-info">
+          <p class="contact-title">Email</p>
+        
+        <a href="mailto:johnnymedhane@gmail.com" class="contact-link"> Johnnymedhane@gmail.com
+        </a>
+      </div>
+
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon">
+            <span class="material-symbols-outlined">
+              smartphone
+              </span>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title"> phone</p>
+            <a href="tel:+972539649436" class="contact-link"> +972 53-9649-362</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon">
+            <span class="material-symbols-outlined">
+              calendar_month
+            </span></div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1996-09-24">september 24, 1996</time>
+            </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-icon">
+            <span class="material-symbols-outlined">
+            location_on
+            </span></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kay Ozer, Pethak Tikva,Israel</address>
+              </div>
+        </li>
+      </ul>
+      <div class="separator"></div>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://www.facebook.com/kahsay.medhane/" class="social-link">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.instagram.com/?__pwa=1" class="social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.tiktok.com/@johnny_swag4?lang=en" class="social-link">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+  </div>
+  </section>
 	
 
     <!-- My services -->
     <section class="my-services" id="services">
+     
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
         <div class="service">
@@ -87,7 +189,7 @@
         <!-- / service -->
 
         <div class="service">
-          <h3 <span class="lo-co">SQL</span></h3>
+          <h3>  <span class="lo-co">SQL</span> </h3>
           <p>
             Using my SQL knowledge and the understanding of the relationship between database tables, keys,  to verify test data, compare data before and after processing and perform QA tests on server side.
  <br><br>
@@ -109,11 +211,12 @@ The ability to interpret more complex queries.
       </div>
       <!-- / services -->
 
-     
+    
     </section>
 
     <!-- About me -->
     <section class="about-me" id="about">
+      
       <h2 class="section__title section__title--about">Who I am</h2>
       <p class="section__subtitle section__subtitle--about">
         A passionate<b> Junior QA Engineer</b>, based in Petah Tikva
@@ -144,13 +247,15 @@ The ability to interpret more complex queries.
         </p>
       </div>
 
-      <img src="C:\Users\user1\OneDrive\Johnny-pc\file\website\cool img.jpg" alt="happy face" class="about-me__img" />
+      <img src="sea-image.jpg" alt="happy face" class="about-me__img" />
+   
     </section>
 
     <!-- resume Section
    ================================================== -->
 
     <section id="resume" class="grey-section">
+     
       <div class="row section-intro">
         <div class="col-twelve">
           <h3>Resume</h3>
@@ -304,11 +409,18 @@ The ability to interpret more complex queries.
         <!-- /col-twelve -->
       </div>
       <!-- /resume-timeline -->
+   
     </section>
 
     <!-- skills -->
-    <div id="skills" class="skills-div">
-      <h2>A list of my skills</h2>
+     <section  id="skills">
+    <div class="skills-div">
+      <div class="article-title">
+        <h2 class="h2 title">A list of my skills</h2>
+        <div class="icon">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+      </div>
 <div class="skills">
         <div class="skills-bar">
           <div class="bar">
@@ -316,6 +428,15 @@ The ability to interpret more complex queries.
               <span>PYTHON</span>
             </div>
             <div class="progress-line python">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="bar">
+            <div class="info">
+              <span>JavaScript</span>
+            </div>
+            <div class="progress-line css">
               <span></span>
             </div>
           </div>
@@ -377,33 +498,209 @@ The ability to interpret more complex queries.
         </div>
       </div>
     </div>
-    
-    
-    <!-- Footer -->
-    <footer class="footer">
-      <!-- replace with your own email address -->
-      <a href="mailto:johnnymedhane@gmail.com" class="footer__link" 
-        >johnnymedhane@gmail.com</a
-      >
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://www.linkedin.com/in/johnny-medhane-53152b1a8/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B5v8QKdb%2FQsGt7e8B7B%2B1ww%3D%3D"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+  </section>
+    <section id="projects">
+     <div class="article-title">
+      <h2 class="h2 title">Projects</h2>
+      <div class="icon">
+        <i class="fa-solid fa-list-check"></i>
+      </div>
+    </div>
+      <ul class="filter-list">
+        <li class="filter-item"><button class="active" data-filter-btn>All</button>
         </li>
-		<li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://github.com/Johnnymedhane"
-            target="_blank"
-            ><i class="fab fa-github"></i
+        <li  class="filter-item"><button data-filter-btn>Python data-analist</button>
+        </li>
+        <li  class="filter-item"><button data-filter-btn>web development</button>
+        </li>
+        <li  class="filter-item"> <button data-filter-btn>QA </button>
+        </li>
       </ul>
-    </footer>
 
-    <script src="C:\Users\user1\OneDrive\Johnny-pc\file\website\java.js">
+      <div class="filter-select-box">
+        <button class="filter-select" data-select>
+          <div class="select-value" data-select-value> Select category</div>
+          <div class="select-icon">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </button>
+
+        <ul class="select-list">
+          <li class="select-item">
+            <button data-select-item>All</button>
+          </li>
+          <li class="select-item">
+            <button data-select-item>Python data-analist</button>
+          </li>
+          <li class="select-item">
+            <button data-select-item>Web development</button>
+          </li>
+          <li class="select-item">
+            <button data-select-item>QA</button>
+          </li>
+        </ul>
+      </div>
+      <ul class="project-list">
+        <li class="project-item  active" data-filter-item data-category="QA">
+          <a href="https://github.com/Johnnymedhane/QA--projects-and-Exercises/blob/main/QA-KMS-%20STD.docx" class="contents">
+
+            <div class="project-img">
+              <div class="project-item-icon-box">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+
+              <img src="std-qa.png" alt="finance" loading="lazy">
+            </div>
+
+            <h3 class="project-title">Management Screen</h3>
+          <p class="project-category">QA </p>
+          <p class="inf"> A feature for search a storage of the company
+            the admin has option to control all connections to all storage services
+        so that can save time searching and communicating in the organization.
+          </p>
+          </a>
+        </li>
+        <li class="project-item  active" data-filter-item data-category="QA">
+          <a href="https://github.com/Johnnymedhane/QA--projects-and-Exercises/blob/main/std%20RateRes.docx">
+          <div class="project-img">
+            <div class="project-item-icon-box">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+
+            <img src="std.qa 2.png" alt="finance" loading="lazy">
+          </div>
+
+          <h3 class="project-title">RateRes</h3>
+
+          <p class="project-category">QA</p>
+           <p class="inf"> A mobile app for srearching best or rated resturants.
+            users can simpley select a town and the app will shows them the most rated resturants in the selected town.
+           </p>
+        </a>
+        </li>
+        <li  class="project-item  active" data-filter-item data-category="Python data-analist">
+          <a href="https://github.com/Johnnymedhane/Python-projects-and-exercises/tree/main/Chipotle">
+
+            <div class="project-img">
+              <div class="project-item-icon-box">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+
+              <img src="data-analyst 2.png" alt="finance" loading="lazy">
+            </div>
+
+            <h3 class="project-title">Dataset analysis</h3>
+
+            <p class="project-category"> Python data-analist</p>
+            <p class="inf">Dataset analysis  with using all functions.
+              used panda to analyze the data.</p>
+
+          </a>
+        </li>
+        <li  class="project-item  active" data-filter-item data-category="Python data-analist">
+          <a href="https://github.com/Johnnymedhane/Python-projects-and-exercises/blob/main/Project_spotifay.dataset.ipynb">
+
+            <div class="project-img">
+              <div class="project-item-icon-box">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+
+              <img src="data-analyst.png" alt="finance" loading="lazy">
+            </div>
+
+            <h3 class="project-title">Spotifay-Dataset</h3>
+            <p class="project-category"> Python data-analist </p>
+            <p class="inf">Analysis Dataset of spotifay songs 2000-2020 with pandas.
+              it contains all information abot the the songs and singers. 
+              it also contains charts</p>
+
+          </a>
+        </li>
+        <li class="project-item  active" data-filter-item data-category="Web development">
+          <a href="https://github.com/Johnnymedhane/RockPaperScissors-Game/tree/game">
+
+            <div class="project-img">
+              <div class="project-item-icon-box">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+
+              <img src="rockpaperscis.png" alt="finance" loading="lazy">
+            </div>
+
+            <h3 class="project-title">Rock Paper Scissors</h3>
+            <p class="project-category">Web development </p>
+            <p class="inf">A hand game, usually played between two people, 
+              each player can form one of the three shapes "rock, paper, scissors". 
+            </p>
+            <a href="https://johnnymedhane.github.io/RockPaperScissors-Game/" class="site">click here</a>
+          </a>
+        </li>
+        <li class="project-item active" data-filter-item data-category="Web development">
+          <a href="https://github.com/Johnnymedhane/Calculator">
+
+            <div class="project-img">
+              <div class="project-item-icon-box">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+
+              <img src="web-calculator.png" alt="finance" loading="lazy">
+            </div>
+
+            <h3 class="project-title">Claculator</h3>
+            <p class="project-category">Web development  </p>
+            <p class="inf"> responsive calcutator built using HTML, CSS, and 
+              JavaScript for performing basic calculations.  
+            </p>
+            <a href="https://myclculatorproject.netlify.app/" class="site">click here</a>
+           </a>
+        </li>
+      </ul>
+   
+    </section>
+    
+    <section id="contatcts"> 
+      <div class="article-title">
+        <h2 class="h2 title">Contacts</h2>
+        <div class="icon">
+          <i class="fa-solid fa-address-card"></i>
+        </div>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=petah tikva israel&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        </iframe>
+        <a href="https://embed-googlemap.com">embed google map
+        </a>
+      </div>
+      <style>.mapouter{position:relative;text-align:right;width:100%;height: 400px;  filter: grayscale(1) invert(1);}.gmap_canvas 
+      {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}
+      </style>
+      </div>
+      <div class="contact-form">
+        <h3 class="h3 form-title">Contact Form</h3>
+
+        <form action="#" class="form" data-form>
+
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          </div>
+
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+          <button class="form-btn" type="submit" disabled data-form-btn>
+            <i class="fa-regular fa-paper-plane"></i>
+            <span>Send Message</span>
+          </button>
+
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+   
+    <script src="java.js">
 	</script>
   </body>
 </html>
